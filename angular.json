@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "ubud-web": "apps/ubud-web",
+    "ubud-web-e2e": "apps/ubud-web-e2e"
+  }
+}
