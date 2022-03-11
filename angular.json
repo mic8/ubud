@@ -1,7 +1,10 @@
 {
-  "version": 2,
-  "projects": {
-    "ubud-web": "apps/ubud-web",
-    "ubud-web-e2e": "apps/ubud-web-e2e"
-  }
+    "version": 2,
+    "projects": {
+        "domain-common": "libs/domain/common",
+        "element-common": "libs/element/common",
+        "interaction-common": "libs/interaction/common",
+        "ubud-web": "apps/ubud/web",
+        "ubud-web-e2e": "apps/ubud/web-e2e"
+    }
 }

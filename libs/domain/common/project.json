@@ -1,0 +1,23 @@
+{
+    "projectType": "library",
+    "root": "libs/domain/common",
+    "sourceRoot": "libs/domain/common/src",
+    "prefix": "ubud",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/domain/common"],
+            "options": {
+                "jestConfig": "libs/domain/common/jest.config.js",
+                "passWithNoTests": true
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "options": {
+                "lintFilePatterns": ["libs/domain/common/src/**/*.ts", "libs/domain/common/src/**/*.html"]
+            }
+        }
+    },
+    "tags": []
+}
