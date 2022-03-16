@@ -5,37 +5,41 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { UbudElementCommonPipeModule, UbudElementCommonShadowCardComponentModule } from '@ubud/element/common';
+import {
+  UbudElementCommonPipeModule,
+  UbudElementCommonShadowCardComponentModule,
+  UbudElementCommonNavbarModule,
+  UbudElementCommonSidebarModule
+} from '@ubud/element/common';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-    ],
-    imports: [
-        BrowserModule,
-        StoreModule.forRoot(
-            {},
-            {
-                runtimeChecks: {
-                    strictStateImmutability: false,
-                    strictActionImmutability: false,
-                },
-            },
-        ),
-        EffectsModule.forRoot([]),
-
-        RouterModule.forRoot([], {initialNavigation: 'enabledBlocking'}),
-        
-        UbudElementCommonShadowCardComponentModule,
-        UbudElementCommonPipeModule,
-    ],
-    providers: [
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    StoreModule.forRoot(
+        {},
         {
-            provide: LOCALE_ID,
-            useValue: 'id',
+            runtimeChecks: {
+                strictStateImmutability: false,
+                strictActionImmutability: false,
+            },
         },
-    ],
-    bootstrap: [AppComponent],
+    ),
+    EffectsModule.forRoot([]),
+
+    RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
+
+    UbudElementCommonShadowCardComponentModule,
+    UbudElementCommonPipeModule,
+    UbudElementCommonNavbarModule,
+    UbudElementCommonSidebarModule
+  ],
+  providers: [
+    {
+      provide: LOCALE_ID,
+      useValue: 'id',
+    },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
