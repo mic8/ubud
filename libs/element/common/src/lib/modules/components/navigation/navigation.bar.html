@@ -1,0 +1,30 @@
+<nav class="bg-blue-800 flex flex-wrap max-w-f12 shadow-neutral-900 shadow-md">
+    <div class="flex flex-wrap flex-1 max-w-f7">
+        <ng-content></ng-content>
+        <div class="navigation max-w-f8 flex-1">
+            <ul role="navigation" class="flex flex-wrap pt-2 pb-2">
+                <li class="nav-link mx-2 hover:bg-blue-700 rounded-sm transition p-2" *ngFor="let link of links">
+                    <a href="{{ link }}">
+                        <span class="nav-text text-sm font-medium text-white">{{  link | uppercase }}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>  
+    </div>
+    
+    <div class="flex-1 max-w-f5 flex flex-wrap">
+        <div class="seach-container max-w-f7 py-4 px-2 flex-1 flex justify-end">
+            <input type="text" class="font-medium text-xs rounded-full outline-none max-w-f5 transition-all ease-in-out duration-200 focus:max-w-f12 py-0 px-4 mr-0" placeholder="Search">
+        </div>
+        <div class="max-w-f1 flex-1 flex flex-wrap text-white ml-2 py-2">
+            <div class="brightness max-w-f12 p-2">
+                <fa-icon [icon]="brightnessIcon" class="p-2 border-r-2" size="lg"></fa-icon>
+            </div>
+        </div>
+        <div class="max-w-f3 flex-1 flex flex-wrap font-medium text-white p-2">
+            <a class="max-w-f4 flex-1 cursor-pointer text-center p-2" *ngFor="let brandIcon of brandIcons">
+                <fa-icon [icon]="brandIcon" class="p-2" size="lg"></fa-icon>
+            </a>
+        </div>
+    </div>
+</nav>

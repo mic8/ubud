@@ -1,0 +1,20 @@
+<div class="py-4 border-b-2 border-neutral-600 text-white flex flex-wrap">
+    
+    <a href="docs" id="content" class="px-4 py-3 w-[100%] flex flex-wrap hover:bg-neutral-600 cursor-pointer transition ease-in-out">
+        <span class="flex-1 max-w-f8">Intoductions</span>
+    </a>
+    <div class="menu-item w-[100%]" *ngFor="let item of menu_items">
+        <div class="px-4 py-3 w-[100%] flex-1 max-w-f12 flex flex-wrap hover:bg-neutral-600 cursor-pointer transition ease-in-out">
+            <span class="flex-1 max-w-f8">{{ item.name }}</span>
+            <span class="max-w-f4 flex-1 flex justify-end">
+                <fa-icon [icon]="chevronRight" size="lg"></fa-icon>
+            </span>
+        </div>
+        <div class="panel max-w-f12 flex-1 hidden" id="content" *ngFor="let content of item_content">
+            <div class="flex flex-wrap py-3 px-7 hover:bg-neutral-600 transition cursor-pointer duration-200" *ngIf="content.item_id == item.id">
+                <span class="flex-1 flex-w-f8">{{ content.name }}</span>
+            </div>
+        </div>
+    </div>
+    <ng-content></ng-content>
+</div>
