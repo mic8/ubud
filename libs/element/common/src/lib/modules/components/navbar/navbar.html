@@ -2,8 +2,8 @@
   <h1 class="text-xl font-medium">Angular</h1>
 
   <ul class="list-none flex gap-8">
-    <li *ngFor="let item of items">
-      <a href="#">{{ item }}</a>
+    <li *ngFor="let item of items; let i = index">
+      <a href="#" class="{{ i === active ? 'font-medium' : '' }}">{{ item }}</a>
     </li>
   </ul>
 </nav>

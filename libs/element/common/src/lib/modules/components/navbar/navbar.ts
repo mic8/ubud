@@ -1,3 +1,4 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
@@ -6,6 +7,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Navbar {
+  @Input() public active = 0;
   @Input() public items: string[] = [
     'Home',
     'Docs',

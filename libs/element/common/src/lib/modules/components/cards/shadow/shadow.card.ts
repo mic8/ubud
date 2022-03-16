@@ -1,3 +1,4 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
