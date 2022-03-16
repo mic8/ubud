@@ -3,7 +3,7 @@ const { join } = require('path');
 module.exports = {
     content: [
         join(__dirname, 'src/**/!(*.stories|*.spec).{ts,html}'),
-        join(__dirname, '../../../libs/element/common/**/!(*.stories|*.spec).{ts,html}')
+        join(__dirname, '../../../libs/element/common/**/*.{ts,html}'),
     ],
     theme: {
         screens: {
@@ -52,11 +52,6 @@ module.exports = {
                     DEFAULT: '#339AF0',
                     dark: '#1f5b8f',
                 },
-                secondary: {
-                    light: '#f5fefb',
-                    DEFAULT: '#33f0be',
-                    dark: '#1f8f68',
-                }
             }
         },
     },

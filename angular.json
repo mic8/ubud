@@ -4,8 +4,6 @@
         "domain-common": "libs/domain/common",
         "element-common": "libs/element/common",
         "interaction-common": "libs/interaction/common",
-        "todo-web": "apps/todo/web",
-        "todo-web-e2e": "apps/todo/web-e2e",
         "ubud-web": "apps/ubud/web",
         "ubud-web-e2e": "apps/ubud/web-e2e"
     }
