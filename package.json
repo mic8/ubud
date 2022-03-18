@@ -30,6 +30,7 @@
         "@ubud/sate": "^3.0.0",
         "@ubud/storage": "^4.0.0",
         "class-transformer": "^0.5.1",
+        "nx": "^13.9.2",
         "rxjs": "~7.4.0",
         "tslib": "^2.0.0",
         "zone.js": "~0.11.4"
