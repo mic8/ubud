@@ -1,7 +1,17 @@
-<div class="container p-4">
-    <ubud-element-common-shadow-card-component>
-        <div class="p-3 bg-grey-light">
+<div class="bg-[#303030] flex flex-col overflow-hidden" >
+
+    <!-- <ubud-element-common-shadow-card-component>
+        <div style="color:black; background-color:red">
             {{ 'Lorem ipsum dolor sit amet' | uppercase:0 }}
         </div>
-    </ubud-element-common-shadow-card-component>
+    </ubud-element-common-shadow-card-component> -->
+
+    <navbar-component></navbar-component>
+    
+    <div class="flex flex-row">
+        <sidebar-component></sidebar-component>
+
+        <body-component></body-component>
+    </div>
+    <article-card class="-mt-36"></article-card>
 </div>
