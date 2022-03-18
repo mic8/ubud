@@ -8,9 +8,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { UbudElementCommonPipeModule, UbudElementCommonShadowCardComponentModule } from '@ubud/element/common';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-    ],
+    declarations: [AppComponent],
     imports: [
         BrowserModule,
         StoreModule.forRoot(
@@ -24,8 +22,8 @@ import { UbudElementCommonPipeModule, UbudElementCommonShadowCardComponentModule
         ),
         EffectsModule.forRoot([]),
 
-        RouterModule.forRoot([], {initialNavigation: 'enabledBlocking'}),
-        
+        RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
+
         UbudElementCommonShadowCardComponentModule,
         UbudElementCommonPipeModule,
     ],
@@ -37,5 +35,4 @@ import { UbudElementCommonPipeModule, UbudElementCommonShadowCardComponentModule
     ],
     bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
