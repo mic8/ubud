@@ -1,7 +1,44 @@
-<div class="container p-4">
-    <ubud-element-common-shadow-card-component>
-        <div class="p-3 bg-grey-light">
-            {{ 'Lorem ipsum dolor sit amet' | uppercase:0 }}
+<div>
+    <ubud-element-common-body-navbar-component> </ubud-element-common-body-navbar-component>
+
+    <div class="flex h-screen">
+        <ubud-element-common-body-sidebar-component></ubud-element-common-body-sidebar-component>
+
+        <div class="bg-darkerblue-dark h-full w-full text-white px-48 py-12">
+            <h2 class="text-3xl font-bold">Introduction to the Angular Docs</h2>
+
+            <p class="my-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+            <p class="my-4">
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+                nulla pariatur
+            </p>
+
+            <div class="flex flex-wrap justify-between">
+                <ubud-element-common-shadow-card-component>
+                    <h3 class="text-md font-bold mb-4">Lorem Ipsum</h3>
+
+                    <p class="opacity-60">
+                        {{
+                            'dignissimos ducimus qui blanditiis Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde laudantium, ducimus, omnis recusandae ullam quasi minus animi minima velit deleniti cum, pariatur veritatis dolorum dignissimos vero inventore repudiandae? Id,
+                        iure.'
+                                | limitator
+                        }}
+                    </p>
+                </ubud-element-common-shadow-card-component>
+                <ubud-element-common-shadow-card-component>
+                    <h3 class="text-md font-bold mb-4">Lorem Ipsum</h3>
+
+                    <p class="opacity-60">{{ 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempore aperiam dolores suscipit accusantium, quo ducimus dolore voluptatem id accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, illo!' | limitator }}</p>
+                </ubud-element-common-shadow-card-component>
+                <ubud-element-common-shadow-card-component>
+                    <h3 class="text-md font-bold mb-4">Lorem Ipsum</h3>
+
+                    <p class="opacity-60">
+                        {{ 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, suscipit. Beatea tempore aperiam' | limitator }}
+                    </p>
+                </ubud-element-common-shadow-card-component>
+            </div>
         </div>
-    </ubud-element-common-shadow-card-component>
+    </div>
 </div>
