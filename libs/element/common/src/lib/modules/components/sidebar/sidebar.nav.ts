@@ -34,4 +34,6 @@ export class SideBar {
         {id: 8, name: 'Hello 8', item_id: 8},
     ];
     
+    @Input() public active = 0;
+    
 }
