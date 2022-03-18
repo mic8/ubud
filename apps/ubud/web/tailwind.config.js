@@ -1,10 +1,7 @@
 const { join } = require('path');
 
 module.exports = {
-    content: [
-        join(__dirname, 'src/**/!(*.stories|*.spec).{ts,html}'),
-        join(__dirname, '../../../libs/element/common/**/!(*.stories|*.spec).{ts,html}')
-    ],
+    content: [join(__dirname, 'src/**/!(*.stories|*.spec).{ts,html}'), join(__dirname, '../../../libs/element/common/**/!(*.stories|*.spec).{ts,html}')],
     theme: {
         screens: {
             sm: '640px',
@@ -17,7 +14,7 @@ module.exports = {
             padding: {
                 DEFAULT: '1.25rem',
                 lg: '0rem',
-            }
+            },
         },
         extend: {
             colors: {
@@ -56,8 +53,16 @@ module.exports = {
                     light: '#f5fefb',
                     DEFAULT: '#33f0be',
                     dark: '#1f8f68',
-                }
-            }
+                },
+                deepblue: {
+                    DEFAULT: '#0d47a1',
+                },
+                darkerblue: {
+                    DEFAULT: '#333333',
+                    dark: '#303030',
+                    light: '#565656',
+                },
+            },
         },
     },
     plugins: [],
