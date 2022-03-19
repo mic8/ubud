@@ -1,0 +1,54 @@
+<nav class="sm:px-4 py-2 dark:bg-blue-800 shadow-xl">
+    <div class="flex flex-wrap items-center mx-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="50" viewBox="0 0 50 50" class="ml-2 -mt-1"
+            style=" fill:white;">
+            <path
+                d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+            </path>
+        </svg>
+
+        <img src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png" class="ml-7 sm:h-10 -mt-1" alt="Aangular Logo">
+    
+        <div class="w-full md:block md:w-auto ml-7">
+            <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                <li>
+                    <a href="#"
+                        class="block text-white md:bg-transparent md:text-white-700 dark:text-white text-base font-custom uppercase -mr-3 text-custom font-semibold"
+                        aria-current="page">Features</a>
+                </li>
+                <li>
+                    <a href="#" class="block md:p-0 dark:text-white text-base font-custom uppercase -mr-3 text-custom font-semibold"
+                    aria-current="page"><span class="bg-active-800 hover:bg-active-600 active:bg-active-700 focus:outline-none focus:ring focus:ring-active-300 rounded px-3 py-3">Docs</span></a>
+                </li>
+                <li>
+                    <a href="#" class="block text-white md:bg-transparent md:text-white-700 md:p-0 dark:text-white text-base font-custom uppercase text-custom font-semibold"
+                        aria-current="page">Resources</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block text-white md:bg-transparent md:text-white-700 md:p-0 dark:text-white text-base font-custom uppercase text-custom font-semibold"
+                        aria-current="page">Events</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block text-white md:bg-transparent md:text-white-700 md:p-0 dark:text-white text-base font-custom uppercase text-custom font-semibold"
+                        aria-current="page">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-nowrap">
+            <div class="relative md:block ml-[270px]">
+                <input type="text" id="search"
+                    class="p-1.5 text-gray-400 rounded-3xl sm:text-sm pl-4"
+                    placeholder="Search">
+            </div>
+            <button class="ml-8">
+                <fa-icon class="text-white -ml-2" [icon]="SunIcon" size="lg"></fa-icon>
+            </button>
+            <div class="border-r-2 ml-3"></div>
+            <fa-icon class="text-white ml-3 mt-1" [icon]="twitterIcon" size="lg"></fa-icon>
+            <fa-icon class="text-white ml-4 mt-1" [icon]="githubIcon" size="lg"></fa-icon>
+            <fa-icon class="text-white ml-4 mt-1" [icon]="youtubeIcon" size="lg"></fa-icon>
+        </div>
+    </div>
+</nav>
