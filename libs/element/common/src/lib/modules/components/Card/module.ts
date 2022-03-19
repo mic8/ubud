@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { CardComponent } from './card';
 
 @NgModule({
-    declarations: [],
+    declarations: [CardComponent],
     imports: [CommonModule],
-    exports: [],
+    exports: [CardComponent],
 })
 export class UbudElementCommonCardComponentModule {}
