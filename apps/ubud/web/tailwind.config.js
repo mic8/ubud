@@ -20,7 +20,33 @@ module.exports = {
             }
         },
         extend: {
+            fontFamily: {
+                'custom' : ['Roboto','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial','Lucida Grande','sans-serif']
+            },
+            fontSize: {
+                'custom': 'clamp(7px,1rem,15px)'
+            },
+            margin: {
+                '270px': '270px'
+            },
             colors: {
+                blue: {
+                    800: '#0d47a1'
+                },
+                lightblue: {
+                    800: '#7fc9ff',
+                    700: '#39d0ff'
+                },
+                dark: {
+                    700: '#333333',
+                    800: '#303030'
+                },
+                active: {
+                    800: 'rgba(255,255,255,.15)'
+                },
+                padding: {
+                    '138px': '138px',
+                },
                 blank: {
                     100: 'rgba(255, 255, 255, 0.1)',
                     200: 'rgba(255, 255, 255, 0.2)',

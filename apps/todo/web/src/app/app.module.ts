@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
-import { UbudElementCommonShadowCardComponentModule } from '@ubud/element/common';
+import { Navbar } from '@ubud/element/common';
 
 @NgModule({
     declarations: [AppComponent],
@@ -11,7 +11,7 @@ import { UbudElementCommonShadowCardComponentModule } from '@ubud/element/common
         BrowserModule,
         RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
         
-        UbudElementCommonShadowCardComponentModule, // mau dipakai (baru diimport)
+        Navbar, // mau dipakai (baru diimport)
     ],
     providers: [],
     bootstrap: [AppComponent],

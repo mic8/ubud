@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ShadowCard } from './shadow.card';
+import { NavbarComponent } from './navbar';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
     declarations: [ // declare variablenya -> var a: ShadowCard;
-        ShadowCard
+        NavbarComponent,
     ],
     imports: [
         CommonModule, // pipe, directive, (mengambil variabel yang didaftarkan)
         FontAwesomeModule
     ],
     exports: [
-        ShadowCard// reassign (mengisi variable) -> var a: ShadowCard = new ShadowCard();
+        NavbarComponent, // reassign (mengisi variable) -> var a: ShadowCard = new ShadowCard();
     ],
 })
-export class ShadowCards {}
+export class Navbar {}

@@ -5,14 +5,16 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { UbudElementCommonPipeModule, UbudElementCommonShadowCardComponentModule } from '@ubud/element/common';
+import { UbudElementCommonPipeModule, ShadowCards, Navbar, Sidebar } from '@ubud/element/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
     declarations: [
-        AppComponent,
+        AppComponent
     ],
     imports: [
         BrowserModule,
+        FontAwesomeModule,
         StoreModule.forRoot(
             {},
             {
@@ -26,7 +28,7 @@ import { UbudElementCommonPipeModule, UbudElementCommonShadowCardComponentModule
 
         RouterModule.forRoot([], {initialNavigation: 'enabledBlocking'}),
         
-        UbudElementCommonShadowCardComponentModule,
+        Navbar, Sidebar, ShadowCards,
         UbudElementCommonPipeModule,
     ],
     providers: [
