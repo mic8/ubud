@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { UbudElementCommonNavbarComponent, UbudElementCommonPipeModule, UbudElementCommonShadowCardComponentModule } from '@ubud/element/common';
+import { UbudElementCommonCardComponentModule, UbudElementCommonNavbarComponent, UbudElementCommonPipeModule, UbudElementCommonShadowCardComponentModule, UbudElementCommonSidebarComponentModule } from '@ubud/element/common';
 
 @NgModule({
     declarations: [AppComponent],
@@ -26,6 +26,8 @@ import { UbudElementCommonNavbarComponent, UbudElementCommonPipeModule, UbudElem
 
         UbudElementCommonShadowCardComponentModule,
         UbudElementCommonNavbarComponent,
+        UbudElementCommonSidebarComponentModule,
+        UbudElementCommonCardComponentModule,
         UbudElementCommonPipeModule,
     ],
     providers: [

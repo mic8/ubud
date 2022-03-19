@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { Navbar } from './navbar';
+import { NavbarComponent } from './navbar';
 
 @NgModule({
-    declarations: [Navbar],
+    declarations: [NavbarComponent],
     imports: [CommonModule],
-    exports: [Navbar],
+    exports: [NavbarComponent],
 })
 export class UbudElementCommonNavbarComponent {}

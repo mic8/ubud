@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-    selector: 'ubud-element-common-navbar-component',
-    templateUrl: './navbar.html',
+    selector: 'ubud-element-common-card-component',
+    templateUrl: './card.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NavbarComponent {}
+export class CardComponent {}
