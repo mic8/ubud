@@ -1,0 +1,16 @@
+<div class="border rounded-xl border-grey-200 p-4">
+    <div>
+        <ng-container *ngIf="title else noTitleTpl">
+            {{ title }}
+        </ng-container>
+        <ng-template #noTitleTpl>
+            <div class="header">
+                <ng-content select="[header]"></ng-content>
+            </div>
+
+            <div class="content mt-4">
+                <ng-content select="[content]"></ng-content>
+            </div>
+        </ng-template>
+    </div>
+</div>

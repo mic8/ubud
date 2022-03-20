@@ -1,0 +1,16 @@
+<nav class="border-b border-grey-200 py-4">
+    <div class="container px-4 md:px-6">
+        <div class="flex items-center space-x-6">
+            <div class="w-40 h-10 rounded-xl bg-primary text-blank flex items-center justify-center text-lg">
+                Todo
+            </div>
+            <div class="flex items-center text-grey-dark text-sm font-bold space-x-4">
+                <a class="hover:text-primary" routerLink="/" routerLinkActive="text-primary" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+                <a class="hover:text-primary" routerLink="/todos" routerLinkActive="text-primary">Todo List</a>
+                <a class="hover:text-primary" routerLink="/about" routerLinkActive="text-primary">About</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>

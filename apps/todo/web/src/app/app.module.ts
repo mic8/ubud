@@ -6,10 +6,15 @@ import { RouterModule } from '@angular/router';
 import { UbudElementCommonShadowCardComponentModule } from '@ubud/element/common';
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent], // reference -> disimpan sebagai memory di aplikasi
     imports: [
         BrowserModule,
-        RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
+        RouterModule.forRoot([ // parent 1
+            {
+                path: '',
+                loadChildren: () => import('./templates/app/app.template.module').then(m => m.AppTemplateModule),
+            },
+        ], { initialNavigation: 'enabledBlocking' }),
         
         UbudElementCommonShadowCardComponentModule, // mau dipakai (baru diimport)
     ],

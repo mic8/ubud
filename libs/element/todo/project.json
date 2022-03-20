@@ -1,0 +1,23 @@
+{
+    "projectType": "library",
+    "root": "libs/element/todo",
+    "sourceRoot": "libs/element/todo/src",
+    "prefix": "ubud",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/element/todo"],
+            "options": {
+                "jestConfig": "libs/element/todo/jest.config.js",
+                "passWithNoTests": true
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "options": {
+                "lintFilePatterns": ["libs/element/todo/src/**/*.ts", "libs/element/todo/src/**/*.html"]
+            }
+        }
+    },
+    "tags": []
+}

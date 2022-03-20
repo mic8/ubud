@@ -1,0 +1,28 @@
+{
+    "root": "apps/alumni/web-e2e",
+    "sourceRoot": "apps/alumni/web-e2e/src",
+    "projectType": "application",
+    "targets": {
+        "e2e": {
+            "executor": "@nrwl/cypress:cypress",
+            "options": {
+                "cypressConfig": "apps/alumni/web-e2e/cypress.json",
+                "devServerTarget": "alumni-web:serve:development"
+            },
+            "configurations": {
+                "production": {
+                    "devServerTarget": "alumni-web:serve:production"
+                }
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["apps/alumni/web-e2e/**/*.{js,ts}"]
+            }
+        }
+    },
+    "tags": [],
+    "implicitDependencies": ["alumni-web"]
+}
