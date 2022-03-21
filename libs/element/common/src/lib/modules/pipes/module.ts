@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UppercasePipe } from './uppercase.pipe';
+import { TruncatePipe } from './truncate.pipe';
 
 const PIPES: any[] = [
-    UppercasePipe,
+    UppercasePipe, 
+    TruncatePipe
 ];
 
 @NgModule({

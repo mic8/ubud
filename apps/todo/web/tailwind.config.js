@@ -6,6 +6,13 @@ module.exports = {
         join(__dirname, '../../../libs/element/common/**/!(*.stories|*.spec).{ts,html}')
     ],
     theme: {
+        colors: {
+            'blue' : '#0d47a1',
+            'active' : 'rgba(255,255,255,.15)'
+        },
+        fontFamily: {
+            'custom' : ['Roboto','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial','Lucida Grande','sans-serif']
+        },
         extend: {},
     },
     plugins: [],
