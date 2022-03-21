@@ -1,7 +1,49 @@
-<div class="container p-4">
-    <ubud-element-common-shadow-card-component>
-        <div class="p-3 bg-grey-light">
-            {{ 'Lorem ipsum dolor sit amet' | uppercase:0 }}
+<div>
+    <ubud-element-common-navbar-component></ubud-element-common-navbar-component>
+    <ubud-element-common-sidebar-component></ubud-element-common-sidebar-component>
+    <div class="pl-64">
+        <div class="p-8">
+            <p class="text-5xl mb-8">Introduction to the Angular Docs</p>
+            <p>
+                Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps. These Angular docs help you learn and use the Angular framework and development platform, from your first application to optimizing complex single-page apps
+                for enterprises. Tutorials and guides include downloadable examples to accelerate your projects.
+            </p>
+            <p class="my-4">These Angular docs help you learn and use the Angular framework and development platform, from your first application to optimizing complex single-page apps for enterprises. Tutorials and guides include downloadable examples to accelerate your projects.</p>
+            <div class="flex flex-row flex-wrap justify-center w-full">
+                <ubud-element-common-shadow-card-component class="basis-1/4 mx-14 my-4">
+                    <p class="text-center my-4 text-xl font-bold text-sky-400">What Is Angular</p>
+                    <p class="text-white text-center px-4 mb-4 text-center px-4 mb-4">
+                        {{
+                            'Donec fringilla, augue eu mollis dignissim, felis massa egestas elit, sed convallis erat ex et tortor. Aenean sed velit vel odio ultricies efficitur quis eget odio. Mauris enim turpis, imperdiet in blandit in, interdum eget diam. Nunc blandit sem et pulvinar luctus. Quisque pellentesque est laoreet quam gravida accumsan. Mauris elementum lobortis sapien, quis porttitor eros facilisis et. Ut neque ligula, imperdiet vestibulum lacus eget, mollis imperdiet magna. Sed sit amet commodo tortor. Cras eros urna, elementum sed consectetur et, convallis vel risus. Sed a ante in ipsum luctus lacinia vitae in erat. In consequat felis libero. Mauris dictum erat at enim pharetra, quis ultricies libero egestas. Ut congue pretium mattis. Nam dapibus lacus id mi varius, ac volutpat lectus sodales. Curabitur dapibus, mauris id sollicitudin eleifend, felis dui condimentum ante, in gravida libero enim nec justo.'
+                                | truncate: 100
+                        }}
+                    </p>
+                    <div class="p-4 bg-gray-500">
+                        <p class="text-right">Platform overview</p>
+                    </div>
+                </ubud-element-common-shadow-card-component>
+                <ubud-element-common-shadow-card-component class="basis-1/4 mx-14 my-4">
+                    <p class="text-center my-4 text-xl font-bold text-sky-400">Getting Started</p>
+                    <p class="text-white text-center px-4 mb-4">{{ 'Lorem ipsum dolor sit amet' | truncate: 100 }}</p>
+                    <div class="p-4 bg-gray-500">
+                        <p class="text-right">Try it now</p>
+                    </div>
+                </ubud-element-common-shadow-card-component>
+                <ubud-element-common-shadow-card-component class="basis-1/4 mx-14 my-4">
+                    <p class="text-center my-4 text-xl font-bold text-sky-400">Learn and Explore</p>
+                    <p class="text-white text-center px-4 mb-4">{{ 'Lorem ipsum dolor sit amet' | truncate: 100 }}</p>
+                    <div class="p-4 bg-gray-500">
+                        <p class="text-right">Introduction to Angular concepts</p>
+                    </div>
+                </ubud-element-common-shadow-card-component>
+                <ubud-element-common-shadow-card-component class="basis-1/4 mx-14 my-4">
+                    <p class="text-center my-4 text-xl font-bold text-sky-400">What Is Angular</p>
+                    <p class="text-white text-center px-4 mb-4">{{ 'Lorem ipsum dolor sit amet' | truncate: 100 }}</p>
+                    <div class="p-4 bg-gray-500">
+                        <p class="text-right">Local setup</p>
+                    </div>
+                </ubud-element-common-shadow-card-component>
+            </div>
         </div>
-    </ubud-element-common-shadow-card-component>
+    </div>
 </div>
