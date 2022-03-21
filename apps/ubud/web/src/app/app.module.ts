@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { UbudElementCommonPipeModule, UbudElementCommonShadowCardComponentModule } from '@ubud/element/common';
+import { UbudElementCommonNavbarComponentModule, UbudElementCommonPipeModule, UbudElementCommonShadowCardComponentModule, UbudElementCommonSidebarComponentModule } from '@ubud/element/common';
 
 @NgModule({
     declarations: [
@@ -27,6 +27,8 @@ import { UbudElementCommonPipeModule, UbudElementCommonShadowCardComponentModule
         RouterModule.forRoot([], {initialNavigation: 'enabledBlocking'}),
         
         UbudElementCommonShadowCardComponentModule,
+        UbudElementCommonNavbarComponentModule,
+        UbudElementCommonSidebarComponentModule,
         UbudElementCommonPipeModule,
     ],
     providers: [
