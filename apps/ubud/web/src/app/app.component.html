@@ -1,7 +1,39 @@
-<div class="container p-4">
-    <ubud-element-common-shadow-card-component>
-        <div class="p-3 bg-grey-light">
-            {{ 'Lorem ipsum dolor sit amet' | uppercase:0 }}
+<ubud-element-common-navigation-bar-component class="fixed top-0 left-0 w-full">
+    <div class="toolbar hover:bg-blue-600 ease-in duration-100 flex-1 max-w-f1 pl-7 px-10 pt-4 cursor-pointer" (click)="expand = !expand">
+        <fa-icon class="text-white" [icon]="barsIcon" size="lg"></fa-icon>
+    </div>
+    <a href="/" class="nav-link home flex-1 max-w-f3 p-4 pr-1 mr-3 pt-2">
+        <img width="140" height="40" src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png" alt="">
+    </a>
+</ubud-element-common-navigation-bar-component>
+
+<div class="flex flex-wrap">
+    <div class="flex-1 max-w-f3 block fixed top-16 left-0 bottom-0 bg-neutral-700 border-r border-neutral-500 ease-in-out overflow-y-auto overflow-x-hidden max-h-screen" [@sidebarAnimation]="expand ? true : false ">
+        <ubud-element-common-sidebar-element></ubud-element-common-sidebar-element>
+    </div>
+`
+    <div class="flex-1 flex pt-[5%]" [@contentAnimation]="expand ? true : false">
+        <div class="container w-[860px] flex flex-wrap p-8 border-b-2 pb-12 border-neutral-600">
+            <h2 class="text-white text-4xl font-bold">Belajar Angular JS</h2>
+            <div class="py-8">
+                <p class="text-white">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate unde, illum aliquam maxime, eveniet ab corrupti magnam quaerat perspiciatis fugit placeat natus impedit animi! Dignissimos consectetur iure maiores consequatur sed. Nostrum, ipsam consequuntur incidunt reiciendis, fugit dolorem voluptatem harum non a reprehenderit debitis unde, ducimus similique officia molestias ab.
+                </p>
+                <p class="text-white py-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis esse deleniti, quod quos rerum quae et, quas aspernatur voluptates ipsum error mollitia tempora autem totam! Dolores tenetur officia accusamus quisquam!
+                </p>
+            </div>
+            
+            <div class="cards w-10/12 mx-auto flex flex-wrap justify-center">
+                <ubud-element-common-shadow-card-component class="w-1/2 p-4" *ngFor="let card of cards">
+                    <div class="text-blue-400 p-4 text-lg">{{ card.title }}</div>
+                    <div class="p-4 text-sm">{{ "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, illum sit excepturi doloribus perspiciatis asperiores! Earum cumque impedit ducimus nobis." | truncate_100 }}</div>
+                    <div class="flex text-sm justify-end bg-neutral-600 p-3 px-4 text-blue-200 w-full">
+                        <span class="max-w-f12">{{ card.button_text }}</span>
+                    </div>
+                </ubud-element-common-shadow-card-component>
+            </div>
+            
         </div>
-    </ubud-element-common-shadow-card-component>
+    </div>
 </div>
