@@ -4,7 +4,7 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
     selector: '[ubudTodoTitle]',
 })
 export class TodoTitleDirective {
-    constructor(private el: ElementRef) {
+    constructor(private el: ElementRef) { // dependency injection
         // this.el.nativeElement.classList.add('text-primary');
     }
 
@@ -20,3 +20,4 @@ export class TodoTitleDirective {
         this.el.nativeElement.style.backgroundColor = color;
     }
 }
+

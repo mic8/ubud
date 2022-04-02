@@ -3,9 +3,11 @@
     "projects": {
         "alumni-web": "apps/alumni/web",
         "alumni-web-e2e": "apps/alumni/web-e2e",
+        "domain-alumni": "libs/domain/alumni",
         "domain-common": "libs/domain/common",
         "element-common": "libs/element/common",
         "element-todo": "libs/element/todo",
+        "interaction-alumni": "libs/interaction/alumni",
         "interaction-common": "libs/interaction/common",
         "todo-web": "apps/todo/web",
         "todo-web-e2e": "apps/todo/web-e2e",

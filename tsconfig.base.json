@@ -15,9 +15,11 @@
         "skipDefaultLibCheck": true,
         "baseUrl": ".",
         "paths": {
+            "@ubud/domain/alumni": ["libs/domain/alumni/src/index.ts"],
             "@ubud/domain/common": ["libs/domain/common/src/index.ts"],
             "@ubud/element/common": ["libs/element/common/src/index.ts"],
             "@ubud/element/todo": ["libs/element/todo/src/index.ts"],
+            "@ubud/interaction/alumni": ["libs/interaction/alumni/src/index.ts"],
             "@ubud/interaction/common": ["libs/interaction/common/src/index.ts"]
         }
     },
