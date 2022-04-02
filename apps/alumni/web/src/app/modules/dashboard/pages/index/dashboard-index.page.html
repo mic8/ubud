@@ -1,0 +1,18 @@
+<div class="container px-4 md:px-6 py-10">
+    <ng-container *ngIf="loading$ | async else dataTpl">
+        <div class="flex items-center justify-center h-40">Sedang memuat...</div>
+    </ng-container>
+    
+    <ng-template #dataTpl>
+        <ng-container *ngIf="graduates$ | async as graduates">
+            <div class="space-y-4">
+                <ng-container *ngFor="let graduate of graduates">
+                    <div class="rounded-xl border border-grey-200 p-6">
+                        <h6 class="text-lg font-bold">{{ graduate.name }}</h6>
+                        <div class="mt-2 text-sm text-grey">Tahun lulus: {{ graduate.graduateYear }}</div>
+                    </div>
+                </ng-container>
+            </div>
+        </ng-container>
+    </ng-template>
+</div>

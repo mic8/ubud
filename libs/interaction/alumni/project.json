@@ -1,0 +1,23 @@
+{
+    "projectType": "library",
+    "root": "libs/interaction/alumni",
+    "sourceRoot": "libs/interaction/alumni/src",
+    "prefix": "ubud",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/interaction/alumni"],
+            "options": {
+                "jestConfig": "libs/interaction/alumni/jest.config.js",
+                "passWithNoTests": true
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "options": {
+                "lintFilePatterns": ["libs/interaction/alumni/src/**/*.ts", "libs/interaction/alumni/src/**/*.html"]
+            }
+        }
+    },
+    "tags": []
+}
