@@ -1,0 +1,39 @@
+<div class="container px-4 md:px-6 py-8">
+    <div class="border rounded-xl p-6 space-y-6">
+        <h4 class="font-bold text-lg">Tambahkan Alumni</h4>
+        
+        <ng-container *ngIf="error$ | async as error">
+            <div>
+                {{ error }}
+            </div>
+        </ng-container>
+        
+        <ng-container *ngIf="success$ | async as success">
+            <div>
+                {{ success }}
+            </div>
+        </ng-container>
+        
+        <div>
+            <ubud-element-alumni-graduate-form-web [form]="form"
+                                                   (submitted)="handleSubmit($event)"
+                                                   #formTpl
+            ></ubud-element-alumni-graduate-form-web>
+        </div>
+        
+        <div>
+            <button class="px-4 py-2 rounded-xl border-primary bg-primary text-blank font-bold text-sm focus:bg-primary-dark"
+                    [class.opacity-80]="loading$ | async"
+                    (click)="formTpl.submit()"
+                    [disabled]="loading$ | async"
+            >
+                <ng-container *ngIf="loading$ | async else btnSubmitTpl">
+                    Sedang menyimpan...
+                </ng-container>
+                <ng-template #btnSubmitTpl>
+                    Simpan
+                </ng-template>
+            </button>
+        </div>
+    </div>
+</div>

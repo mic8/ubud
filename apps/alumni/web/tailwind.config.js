@@ -4,6 +4,7 @@ module.exports = {
     content: [
         join(__dirname, 'src/**/!(*.stories|*.spec).{ts,html}'),
         join(__dirname, '../../../libs/element/common/**/!(*.stories|*.spec).{ts,html}'),
+        join(__dirname, '../../../libs/element/alumni/**/!(*.stories|*.spec).{ts,html}'),
     ],
     theme: {
         screens: {

@@ -1,4 +1,10 @@
-<div class="container px-4 md:px-6 py-10">
+<div class="container px-4 md:px-6 py-10 space-y-6">
+    <div class="flex items-center justify-between space-x-4">
+        <h4 class="text-lg font-bold">Daftar Alumni</h4>
+        
+        <a routerLink="./create" class="bg-primary px-4 py-2 rounded-xl border-primary text-blank text-sm font-bold">Tambah Alumni</a>
+    </div>
+    
     <ng-container *ngIf="loading$ | async else dataTpl">
         <div class="flex items-center justify-center h-40">Sedang memuat...</div>
     </ng-container>

@@ -8,7 +8,11 @@ import { RouterModule } from '@angular/router';
                 path: '',
                 loadChildren: () => import('./index/dashboard-index.module').then(m => m.DashboardIndexPageModule),
             },
-        ])
+            {
+                path: 'create',
+                loadChildren: () => import('./create/dashboard-create.module').then(m => m.DashboardCreatePageModule),
+            },
+        ]),
     ]
 })
 export class DashboardAppModule {
