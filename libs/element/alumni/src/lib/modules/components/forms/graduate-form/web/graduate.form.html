@@ -1,0 +1,13 @@
+<form method="post" [formGroup]="form.formGroup" [ubudForm]="formState" (ngSubmit)="onSubmit()">
+    <div class="py-2">
+        <input type="text" formControlName="name" class="block w-full border border-grey-200 rounded-lg px-4 py-3" />
+        <ubud-form-error [control]="form.formGroup.get('name')" [rules]="form.rules"></ubud-form-error>
+    </div>
+
+    <div class="py-2">
+        <input type="number" formControlName="graduateYear" class="block w-full border border-grey-200 rounded-lg px-4 py-3" />
+        <ubud-form-error [control]="form.formGroup.get('graduateYear')" [rules]="form.rules"></ubud-form-error>
+    </div>
+    
+    <input type="submit" class="hidden" />
+</form>

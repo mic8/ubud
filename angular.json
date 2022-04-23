@@ -5,6 +5,7 @@
         "alumni-web-e2e": "apps/alumni/web-e2e",
         "domain-alumni": "libs/domain/alumni",
         "domain-common": "libs/domain/common",
+        "element-alumni": "libs/element/alumni",
         "element-common": "libs/element/common",
         "element-todo": "libs/element/todo",
         "interaction-alumni": "libs/interaction/alumni",

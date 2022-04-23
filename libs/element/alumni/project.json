@@ -1,0 +1,23 @@
+{
+    "projectType": "library",
+    "root": "libs/element/alumni",
+    "sourceRoot": "libs/element/alumni/src",
+    "prefix": "ubud",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/element/alumni"],
+            "options": {
+                "jestConfig": "libs/element/alumni/jest.config.js",
+                "passWithNoTests": true
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "options": {
+                "lintFilePatterns": ["libs/element/alumni/src/**/*.ts", "libs/element/alumni/src/**/*.html"]
+            }
+        }
+    },
+    "tags": []
+}
