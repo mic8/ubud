@@ -10,6 +10,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
     `,*/ // isi html langsung di typescript
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
+// eslint-disable-next-line @angular-eslint/component-class-suffix
 export class ShadowCard {
     @Input() public title!: string;
 }
