@@ -10,11 +10,11 @@ export class GraduateRepository extends Repository<AlumniState> {
     public constructor(store: AlumniStore) {
         super(store);
     }
-    
+
     public getGraduates$(): Observable<Graduate[] | undefined | null> { // istilahnya untuk get data yang sifatnya evetn stream
         return this.select(state => state.graduate.graduates);
     }
-    
+
     public getGraduate$(): Observable<Graduate | undefined | null> {
         return this.select(state => state.graduate.graduate);
     }

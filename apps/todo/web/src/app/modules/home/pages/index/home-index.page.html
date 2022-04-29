@@ -1,7 +1,30 @@
-<div class="container px-4 md:px-6 py-10">
-    <h1 class="text-2xl font-bold"
-        ubudTodoTitle
-    >
-        Todo App
-    </h1>
+<div class="container px-4 md:px-6 py-10 space-y-6">
+    <div class="flex items-center justify-between space-x-4">
+        <h4 class="text-lg font-bold">Daftar Komentar</h4>
+    </div>
+    <ng-container *ngIf="loading$ | async else dataTpl">
+        <div class="flex items-center justify-center h-40">loading...</div>
+    </ng-container>
+
+    <ng-template #dataTpl>
+        <ng-container *ngIf="comments$ | async as comments">
+            <div class="space-y-4">
+                <div class="grid grid-cols-3">
+                    <ng-container *ngFor="let comment of comments">
+                        <div class="max-w-sm rounded overflow-hidden shadow-lg border-2 mt-4">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2 text-center">{{ comment.id }}</div>
+                                <p class="text-gray-700 text-base font-bold text-center">
+                                    {{ comment.tittle }}
+                                </p>
+                                <p class="text-gray-700 text-base text-center mt-2">
+                                    {{ comment.created_at }}
+                                </p>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </ng-container>
+    </ng-template>
 </div>

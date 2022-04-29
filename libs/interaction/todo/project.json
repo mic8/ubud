@@ -1,0 +1,23 @@
+{
+    "projectType": "library",
+    "root": "libs/interaction/todo",
+    "sourceRoot": "libs/interaction/todo/src",
+    "prefix": "ubud",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/interaction/todo"],
+            "options": {
+                "jestConfig": "libs/interaction/todo/jest.config.js",
+                "passWithNoTests": true
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "options": {
+                "lintFilePatterns": ["libs/interaction/todo/src/**/*.ts", "libs/interaction/todo/src/**/*.html"]
+            }
+        }
+    },
+    "tags": []
+}

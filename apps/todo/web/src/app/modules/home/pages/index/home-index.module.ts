@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
-import { HomeIndexPage } from './home-index.page';
+import { CommonModule } from '@angular/common';
+import { HomeIndexPages } from './home-index.page';
 import { RouterModule } from '@angular/router';
-import { TodoTitleDirectiveModule } from '../../../todo/directives/todo-title/todo-title.module';
+import { UbudInteractionTodoModule } from 'libs/interaction/todo/src';
 
 @NgModule({
-    declarations: [HomeIndexPage],
+    declarations: [HomeIndexPages],
     imports: [
-        TodoTitleDirectiveModule,
-        
+        CommonModule,
+        UbudInteractionTodoModule,
         RouterModule.forChild([
             {
                 path: '',
-                component: HomeIndexPage,
+                component: HomeIndexPages,
             },
         ]),
     ]
