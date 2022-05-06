@@ -1,7 +1,27 @@
-<div class="container p-4">
-    <ubud-element-common-shadow-card-component>
-        <div class="p-3 bg-grey-light">
-            {{ 'Lorem ipsum dolor sit amet' | uppercase:0 }}
-        </div>
-    </ubud-element-common-shadow-card-component>
-</div>
+<main class="flex flex-col bg-gray-900 h-screen overflow-hidden">
+  <ubud-element-common-navbar-component></ubud-element-common-navbar-component>
+
+  <div class="flex flex-grow overflow-hidden">
+    <ubud-element-common-sidebar-component></ubud-element-common-sidebar-component>
+
+    <div class="container py-16 px-32 text-gray-100 flex-grow overflow-auto scrollbar">
+      <div class="mb-12">
+        <h2 class="text-5xl font-bold mb-8">Why Angular?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus dui vel fermentum vulputate. Donec quis sodales elit, in tincidunt justo. Nam id mollis leo. Nulla eget erat eu ipsum tincidunt tincidunt. Integer ut bibendum diam. Sed nisi metus, interdum quis velit non, congue faucibus lectus. Nullam eu auctor justo. Donec laoreet dui a enim pulvinar, sed tincidunt odio elementum. Proin turpis ipsum, vulputate et viverra sit amet, molestie id mauris. Mauris eget elit eget tellus dignissim iaculis. Suspendisse potenti. Fusce ante nibh, pulvinar nec nibh tempus, auctor lobortis odio. Nunc quis venenatis felis.</p>
+      </div>
+
+      <div class="flex gap-8 px-16">
+        <ubud-element-common-shadow-card-component class="w-1/2" *ngFor="let card of cards">
+          <div class="flex flex-col p-8">
+            <h3 class="text-2xl font-medium mb-4 text-teal-300">{{ card.title }}</h3>
+            <p class="text-gray-300">{{ card.value | truncate }}</p>
+          </div>
+        </ubud-element-common-shadow-card-component>
+      </div>
+
+      <hr class="my-16 border-slate-500">
+
+      <p class="text-6xl text-slate-800">ඞ</p>
+    </div>
+  </div>
+</main>

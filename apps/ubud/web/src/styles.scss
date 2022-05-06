@@ -3,3 +3,19 @@
 @tailwind utilities;
 
 /* You can add global styles to this file, and also import other style files */
+
+.scrollbar::-webkit-scrollbar {
+  @apply w-2;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  @apply bg-slate-800;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-slate-700;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-indigo-900;
+}

@@ -1,0 +1,9 @@
+<nav class="w-screen py-4 px-8 bg-blue-800 text-white flex justify-between items-center shadow-md">
+  <h1 class="text-xl font-medium">Angular</h1>
+
+  <ul class="list-none flex gap-8">
+    <li *ngFor="let item of items; let i = index">
+      <a href="#" class="{{ i === active ? 'font-medium' : '' }}">{{ item }}</a>
+    </li>
+  </ul>
+</nav>
