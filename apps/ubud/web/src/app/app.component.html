@@ -1,7 +1,38 @@
-<div class="container p-4">
-    <ubud-element-common-shadow-card-component>
-        <div class="p-3 bg-grey-light">
-            {{ 'Lorem ipsum dolor sit amet' | uppercase:0 }}
+<main class="h-screen bg-gray flex flex-col">
+    <ubud-element-common-navbar-component></ubud-element-common-navbar-component>
+
+    <div class="flex flex-grow">
+        <ubud-element-common-sidebar-component></ubud-element-common-sidebar-component>
+
+        <div class="container mx-auto px-10 pt-10">
+            <div class="mb-16">
+                <h1 class="text-4xl	text-white font-bold">Getting started with Angular</h1>
+                <p class="text-white mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae, quidem pariatur rerum, quaerat, molestias ab ad commodi laboriosam distinctio animi nulla soluta eligendi. Molestiae atque dolor inventore architecto? Ea at exercitationem dolorem odit sunt recusandae sequi aspernatur quae asperiores, debitis explicabo accusantium eveniet, unde est facere et libero officia tempore quod excepturi amet non voluptatem aliquid id? Tempora sequi cupiditate beatae ipsum expedita velit doloribus, veniam possimus? Inventore voluptatibus ad eum maxime cum incidunt ut aut, minus autem aspernatur non nostrum odit similique quam esse atque, numquam facilis tenetur dolor! Iusto enim nemo rerum quas corporis eaque cum modi?</p>
+            </div>
+
+            <div class="cards flex justify-around">
+                <ubud-element-common-article-card-component>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' | excerpt }}</p>
+                </ubud-element-common-article-card-component>
+
+                <ubud-element-common-article-card-component>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lorem ipsum dolor sit amet.</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ratione vel perferendis nisi cum! Dignissimos commodi libero non modi est, iusto deserunt numquam minus reiciendis similique blanditiis tempora voluptas officiis.' | excerpt }}</p>
+                </ubud-element-common-article-card-component>
+            </div>
         </div>
-    </ubud-element-common-shadow-card-component>
-</div>
+    </div>
+</main>
+
+<style>
+
+.bg-gray {
+    background-color: #303030;
+}
+
+</style>
