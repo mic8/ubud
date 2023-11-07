@@ -1,7 +1,33 @@
-<div class="container p-4">
+<!-- <div class="container p-4">
     <ubud-element-common-shadow-card-component>
         <div class="p-3 bg-grey-light">
             {{ 'Lorem ipsum dolor sit amet' | uppercase:0 }}
         </div>
     </ubud-element-common-shadow-card-component>
-</div>
+</div> -->
+
+
+<main>
+    <ubud-element-common-navbar-component></ubud-element-common-navbar-component>
+    <div class="content flex min-h-screen fixed">
+        <ubud-element-common-sidebar-component></ubud-element-common-sidebar-component>
+        <ubud-element-common-card-content-component>
+            <div class="rounded-lg bg-grey-800 shadow-md border border-gray-700 px-5 py-5 max-w-xs h-full">
+                <a href="">
+                    <h5 class="text-white font-bold mb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur.
+                    </h5>
+                </a>
+                <p class="text-grey">{{ 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' | excerpt }}</p>
+            </div>
+            <div class="rounded-lg bg-grey-800 shadow-md border border-gray-700 px-5 py-5 max-w-xs h-full">
+                <a href="">
+                    <h5 class="text-white font-bold mb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h5>
+                </a>
+                <p class="text-grey">{{ 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rerum modi dolorum libero expedita maxime, animi ex consectetur adipisci nihil, omnis incidunt voluptatem impedit unde quisquam dignissimos quibusdam est error?' | excerpt }}</p>
+            </div>
+        </ubud-element-common-card-content-component>
+    </div>
+</main>
